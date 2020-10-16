@@ -76,7 +76,7 @@ class PConv3D(Conv3D):
         )
 
         update_image = K.conv3d(
-            images, self.kernel_mask, 
+            images, self.kernel, 
             strides=self.strides,
             padding='valid',
             data_format=self.data_format,
